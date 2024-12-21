@@ -1,5 +1,5 @@
 const container = document.querySelector(".container");
-
+var audio = document.getElementById('background-music');
 const dropped = () => {
     const drop = document.createElement("span");
 
@@ -18,3 +18,27 @@ const dropped = () => {
 }
 
 setInterval(dropped, 50);
+
+document.addEventListener('DOMContentLoaded', function() {
+  
+  // Démarrer la musique automatiquement
+  audio.play();
+  
+  // Gérons la fin de la lecture
+  audio.addEventListener('ended', function() {
+    this.currentTime = 0;
+    this.play();
+  }, false);
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  const playButton = document.createElement('button');
+  playButton.textContent = 'Play Music';
+  document.body.appendChild(playButton);
+
+  playButton.addEventListener('click', () => {
+    audio.play();
+    playButton.remove(); // Supprime le bouton après avoir démarré la musique
+  });
+});
+
