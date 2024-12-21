@@ -1,0 +1,54 @@
+/* Je mets en commentaire les noms des couleurs  */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0D1B2A;
+    /* Bleu sombre futuriste */
+    font-size: 10px;
+    overflow: hidden;
+}
+
+.drop {
+    background-color: #00C9FF;
+    /* Cyan lumineux */
+    height: 5rem;
+    width: 5rem;
+    border-radius: 5%;
+    border: 4px solid rgba(0, 255, 255, 0.6);
+    /* Cyan translucide */
+    position: absolute;
+    animation: animate 5s linear;
+    transition: all 0.5s ease-in-out;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 1;
+        transform: scale(2);
+    }
+
+    25% {
+        border-radius: 25%;
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: scale(3);
+        border-radius: 35%;
+        background-color: #4B00FF;
+        /* Violet vibrant */
+    }
+
+    100% {
+        opacity: 1;
+        background-color: #00FF85;
+        /* Vert fluo tech */
+        transform: scale(4);
+        border-radius: 50%;
+    }
+}
