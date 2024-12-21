@@ -30,7 +30,7 @@ Ce projet génère aléatoirement des gouttes animées qui évoluent dans leur a
 1. Clone le projet depuis le dépôt GitHub :  
 
 ```bash
-git clone https://github.com/Dimitri-Tedom/Project-2-Drop-Animation-Project.git
+git clone https://github.com/DimitriTedom/STS_DropAnimation.git
 ```
 
 2. Ouvre le fichier **index.html** dans un navigateur.
@@ -56,7 +56,7 @@ STS_Drop_Animation/
 
 ## 📷 **Capture d'écran**
 
-*(Ajoute ici une capture d'écran ou un GIF montrant l'animation en action)*
+![Preview de l'animation](./assets/preview.png)
 
 ---
 
